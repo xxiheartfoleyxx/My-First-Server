@@ -11,3 +11,7 @@ end
 get "/sinatra" do
   "Hello Sinatra"
 end
+
+get "/" do
+  File.read(File.join('public', 'index.html'))
+end
